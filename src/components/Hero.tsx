@@ -56,13 +56,13 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-gray-100 flex-shrink-0 bg-gray-50"
+          className="relative w-full max-w-[280px] md:max-w-[360px] aspect-[4/5] rounded-xl overflow-hidden border border-gray-200 flex-shrink-0 bg-white shadow-sm"
         >
           <Image 
             src="/KaushikPhoto.JPG" 
             alt="Kaushik Kumar" 
             fill 
-            className="object-cover" 
+            className="object-cover object-top" 
             priority
           />
         </motion.div>
