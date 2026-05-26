@@ -1,61 +1,53 @@
 "use client";
 import { motion } from "framer-motion";
-import { ArrowRight, Terminal } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="min-h-[90vh] flex flex-col justify-center items-start pt-20 max-w-6xl mx-auto px-6 relative">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-medium mb-6"
-      >
-        <Terminal size={14} />
-        <span>System Architect & AI Engineer</span>
-      </motion.div>
-
-      <motion.h1 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-        className="text-5xl md:text-7xl font-bold tracking-tight mb-6"
-      >
-        Building Production <br />
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">GenAI Systems.</span>
-      </motion.h1>
-
-      <motion.p 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-        className="text-lg md:text-xl text-muted max-w-2xl mb-10 leading-relaxed"
-      >
-        I&apos;m Kaushik Kumar, a Software Engineer @ Cisco and a Multi-Agent Architect. 
-        I specialize in scaling intelligent agents, LLM applications, and complex data pipelines.
-      </motion.p>
-
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
-        className="flex flex-col sm:flex-row gap-4"
-      >
-        <Link 
-          href="#projects" 
-          className="flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
+    <section className="min-h-[80vh] flex flex-col justify-center items-start pt-20 relative max-w-4xl mx-auto px-6">
+      <div className="relative z-10 w-full">
+        <motion.h1 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 text-foreground"
         >
-          View Featured Work <ArrowRight size={18} />
-        </Link>
-        <Link 
-          href="https://github.com/kaushikkumarkr" 
-          target="_blank"
-          className="flex items-center justify-center gap-2 px-6 py-3 rounded-lg border border-card-border bg-card/50 hover:bg-card transition-colors font-medium"
+          Kaushik Kumar. <br />
+          <span className="text-muted">Building Production Compound AI Systems.</span>
+        </motion.h1>
+
+        <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="text-lg md:text-xl text-muted max-w-2xl mb-10 leading-relaxed font-medium"
         >
-          Explore GitHub
-        </Link>
-      </motion.div>
+          I am an MS in Computer Science student at NJIT and an AI Engineer. 
+          I specialize in Agentic AI, scalable MLOps, and deterministic multi-agent workflows that bridge the gap between advanced research and business outcomes.
+        </motion.p>
+
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="flex flex-col sm:flex-row gap-4"
+        >
+          <Link 
+            href="#projects" 
+            className="flex items-center justify-center gap-2 px-6 py-3 rounded bg-black text-white font-medium hover:bg-gray-800 transition-colors text-sm"
+          >
+            View Work <ArrowRight size={16} />
+          </Link>
+          <Link 
+            href="https://github.com/kaushikkumarkr" 
+            target="_blank"
+            className="flex items-center justify-center gap-2 px-6 py-3 rounded border border-gray-300 bg-white hover:bg-gray-50 transition-colors font-medium text-sm text-black"
+          >
+            GitHub
+          </Link>
+        </motion.div>
+      </div>
     </section>
   );
 }

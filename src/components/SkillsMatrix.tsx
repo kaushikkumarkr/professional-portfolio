@@ -1,46 +1,38 @@
 "use client";
 import { motion } from "framer-motion";
-import { Brain, Database, LayoutTemplate, Server } from "lucide-react";
 
 const skillCategories = [
   {
-    title: "AI & Machine Learning",
-    icon: <Brain className="text-primary" size={24} />,
-    skills: ["LLM Orchestration", "LangChain & LangGraph", "RAG Systems", "Optuna", "SHAP", "Model Fine-Tuning"]
+    title: "Agentic AI & Prompting",
+    skills: ["LangChain & LangGraph", "Deepagents", "Model Context Protocol (MCP)", "CrewAI", "ReAct & Reflection", "A2A Orchestration"]
   },
   {
-    title: "Backend & Systems",
-    icon: <Server className="text-accent" size={24} />,
-    skills: ["Python", "FastAPI", "Multi-Agent Systems", "MCP Protocols", "PostgreSQL", "System Architecture"]
+    title: "Machine Learning & RAG",
+    skills: ["PyTorch & Transformers", "Hybrid Retrieval", "Cross-Encoder Reranking", "XGBoost", "Optuna & SHAP", "CNNs & LSTMs"]
   },
   {
-    title: "Frontend Development",
-    icon: <LayoutTemplate className="text-blue-400" size={24} />,
-    skills: ["TypeScript", "Next.js", "React", "Tailwind CSS", "Framer Motion", "Streamlit"]
+    title: "DevOps, Cloud & DBs",
+    skills: ["Microsoft Azure", "Google Cloud Platform (GCP)", "Qdrant & ChromaDB", "pgvector", "Docker & Kubernetes", "FastAPI & PostgreSQL", "CI/CD"]
   },
   {
-    title: "Data & Cloud Infrastructure",
-    icon: <Database className="text-green-400" size={24} />,
-    skills: ["Data Pipelines", "Recommendation Systems", "Docker", "Git/CI-CD", "AWS", "Analytics"]
+    title: "AI Safety & Observability",
+    skills: ["Arize Phoenix", "Langfuse", "LLM-as-a-Judge", "Hallucination Detection", "Guardrails", "PII Filtering"]
   }
 ];
 
 export default function SkillsMatrix() {
   return (
-    <section id="skills" className="py-24 max-w-6xl mx-auto px-6">
+    <section id="skills" className="py-24 max-w-4xl mx-auto px-6 border-t border-gray-200">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Core Arsenal</h2>
-        <p className="text-muted max-w-2xl mb-12">
-          A blend of deep backend engineering, advanced machine learning, and intuitive frontend experiences.
-        </p>
+        <h2 className="text-2xl font-bold mb-8 text-black">Skills & Arsenal</h2>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {skillCategories.map((category, idx) => (
           <motion.div
             key={category.title}
@@ -48,19 +40,14 @@ export default function SkillsMatrix() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: idx * 0.1 }}
-            className="p-6 rounded-2xl border border-card-border bg-card/40 hover:bg-card/60 transition-colors group"
+            className="flex flex-col"
           >
-            <div className="flex items-center gap-4 mb-6">
-              <div className="p-3 rounded-xl bg-background border border-card-border shadow-sm group-hover:scale-110 transition-transform">
-                {category.icon}
-              </div>
-              <h3 className="text-xl font-semibold">{category.title}</h3>
-            </div>
+            <h3 className="text-sm font-semibold text-gray-900 mb-3 uppercase tracking-wider">{category.title}</h3>
             <div className="flex flex-wrap gap-2">
               {category.skills.map(skill => (
                 <span 
                   key={skill} 
-                  className="px-3 py-1 text-sm rounded-full bg-background/50 border border-card-border text-foreground/80"
+                  className="px-3 py-1 text-sm bg-gray-50 border border-gray-200 text-gray-700 rounded-sm"
                 >
                   {skill}
                 </span>
