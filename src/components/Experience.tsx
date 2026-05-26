@@ -6,22 +6,22 @@ const experiences = [
     role: "AI Engineer",
     company: "FIELDWORKER.AI",
     duration: "Feb 2026 - May 2026",
-    description: "Architected an end-to-end agentic SDR parsing system using a self-hosted open-source LLM, reducing manual data entry time from hours to under 3 minutes per document. Designed human-in-the-loop (HITL) validation pipelines and enforced strict schema validations on agent operations.",
-    tags: ["Agentic AI", "LLMs", "Node.js", "PostgreSQL", "HITL"]
+    description: "Reduced manual data entry time from 2 hours to under 3 minutes per document. Architected an end-to-end agentic SDR parsing system using a self-hosted LLM with strict check-then-update logic, driving an estimated 95% reduction in processing costs and accelerating client onboarding.",
+    tags: ["Agentic AI", "Cost Reduction", "HITL Validations", "PostgreSQL"]
   },
   {
     role: "Software Engineer Intern",
     company: "CISCO SYSTEMS, INC.",
     duration: "Feb 2024 - Jun 2024",
-    description: "Developed scalable backend solutions for the CCW Renewals team, increasing operational efficiency by 20% across 500+ enterprise accounts. Implemented Spring Boot microservices with caching, improving response times by 30%. Achieved 95% test coverage using Mockito.",
-    tags: ["Spring Boot", "Microservices", "Java", "Mockito", "Backend"]
+    description: "Streamlined operational processes across 500+ enterprise accounts, resulting in a 20% increase in operational efficiency. Designed scalable Spring Boot microservices with optimized caching that reduced database load by 45% and improved response times by 30% during peak traffic.",
+    tags: ["Spring Boot", "Microservices", "Efficiency Scaling", "Mockito"]
   },
   {
     role: "ML Engineer",
     company: "VERZEO EDUTECH PVT. LTD.",
     duration: "Feb 2023 - Mar 2023",
-    description: "Developed real-time AI models using CNN and RNN for image classification and forecasting. Deployed containerized microservices on GCP with batch inference strategies, reducing latency by 25%.",
-    tags: ["CNN/RNN", "GCP", "Docker", "Machine Learning"]
+    description: "Reduced model latency by 25% and scaled resource capacity by 50% for peak workloads. Translated core business requirements into real-time CNN/RNN pipelines on GCP, presenting actionable model insights directly to non-technical stakeholders.",
+    tags: ["GCP", "Latency Optimization", "Machine Learning", "Docker"]
   }
 ];
 

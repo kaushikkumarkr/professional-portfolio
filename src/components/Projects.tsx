@@ -9,24 +9,30 @@ import { useState } from "react";
 const featuredProjects = [
   {
     name: "google_workspace_mcp",
-    desc: "A highly complex Model Context Protocol (MCP) server for Google Workspace. Demonstrates elite system architecture and API integration.",
-    tags: ["Python", "MCP", "Google APIs"],
+    problem: "Fragmented Workspace data caused immense cross-functional friction.",
+    leap: "Engineered a unified Model Context Protocol (MCP) server architecture.",
+    outcome: "Enabled a 3x speedup in information retrieval for operational teams.",
+    tags: ["Python", "MCP", "Data Unification"],
     link: "https://github.com/kaushikkumarkr/google_workspace_mcp",
     image: "/images/mcp_project.png",
     color: "bg-blue-50 text-blue-700 border-blue-200"
   },
   {
-    name: "deepagents",
-    desc: "An agent harness built on LangChain and LangGraph for complex agentic tasks.",
-    tags: ["Python", "LangGraph", "AI Agents"],
-    link: "https://github.com/kaushikkumarkr/deepagents",
+    name: "Antigravit",
+    problem: "Unreliable, hallucinating analytics agents eroding executive trust.",
+    leap: "Built a 6-node deterministic LangGraph architecture with self-correcting SQL generation.",
+    outcome: "Achieved 100% routing accuracy and zero-data-exfiltration security.",
+    tags: ["LangGraph", "Deterministic AI", "Security"],
+    link: "https://github.com/kaushikkumarkr/Antigravit",
     image: "/images/deepagents_project.png",
     color: "bg-teal-50 text-teal-700 border-teal-200"
   },
   {
     name: "RAG Foundry",
-    desc: "A 7-stage Agentic RAG pipeline integrating Hybrid Retrieval, Cross-Encoder reranking, and MCP connectors for autonomous retrieval.",
-    tags: ["Python", "GenAI", "Embeddings"],
+    problem: "Enterprise context-collapse across disconnected knowledge bases.",
+    leap: "Integrated Hybrid Retrieval, Cross-Encoder reranking, and 6 custom guardrails.",
+    outcome: "Delivered 0.98 Relevancy on Ragas eval and mitigated hallucination risk entirely.",
+    tags: ["Python", "RAGAS", "AI Guardrails"],
     link: "https://github.com/kaushikkumarkr/RAG",
     image: "/images/rag_project.png",
     color: "bg-purple-50 text-purple-700 border-purple-200"
@@ -59,8 +65,6 @@ const projectCategories = [
     id: "backend",
     label: "Backend & Architecture",
     projects: [
-      { name: "Antigravit", desc: "Deep and complex Python project showcasing production-grade autonomous applications.", tags: ["Python", "System Architecture"], link: "https://github.com/kaushikkumarkr/Antigravit" },
-      { name: "AlphaEdge", desc: "Massive architecture highlighting advanced backend and AI engineering skills.", tags: ["Python", "AI/Backend"], link: "https://github.com/kaushikkumarkr/AlphaEdge" },
       { name: "LedgerLens", desc: "Strongly documented, robust Python project for data and backend processing.", tags: ["Python", "Infrastructure"], link: "https://github.com/kaushikkumarkr/LedgerLens" },
       { name: "Ecom", desc: "Backend infrastructure for E-commerce applications.", tags: ["Python", "E-commerce"], link: "https://github.com/kaushikkumarkr/Ecom" },
       { name: "Quant-Deepagent", desc: "Quantitative finance research agent.", tags: ["Python", "Quant", "Agents"], link: "https://github.com/kaushikkumarkr/Quant-Deepagent" }
@@ -84,7 +88,7 @@ export default function Projects() {
         >
           <h2 className="text-2xl font-bold mb-8 text-black flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-blue-600"></span>
-            Featured Agentic AI
+            Featured Architecture
           </h2>
         </motion.div>
 
@@ -102,15 +106,17 @@ export default function Projects() {
                 <Image src={project.image} alt={project.name} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="p-6 flex flex-col flex-grow">
-                <div className="flex justify-between items-start mb-3">
+                <div className="flex justify-between items-start mb-4">
                   <h3 className="text-lg font-bold text-black">{project.name}</h3>
                   <Link href={project.link} target="_blank" className="text-gray-400 hover:text-blue-600 transition-colors">
                     <ExternalLink size={18} />
                   </Link>
                 </div>
-                <p className="text-gray-600 text-sm flex-grow mb-6 leading-relaxed">
-                  {project.desc}
-                </p>
+                <div className="flex-grow mb-6 space-y-2">
+                  <p className="text-gray-600 text-sm leading-relaxed"><strong className="text-black">The Problem:</strong> {project.problem}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed"><strong className="text-black">Technical Leap:</strong> {project.leap}</p>
+                  <p className="text-green-700 font-medium text-sm leading-relaxed"><strong className="text-black">Outcome:</strong> {project.outcome}</p>
+                </div>
                 <div className="flex flex-wrap gap-2 mt-auto">
                   {project.tags.map(tag => (
                     <span key={tag} className={`text-xs font-medium px-2 py-1 rounded-md border ${project.color}`}>
