@@ -15,7 +15,7 @@ export default function Footer() {
           <Link href="https://github.com/kaushikkumarkr" target="_blank" className="hover:text-black transition-colors">
             <FaGithub size={20} />
           </Link>
-          <Link href="https://linkedin.com/in/kaushikkumarkr" target="_blank" className="hover:text-black transition-colors">
+          <Link href="https://www.linkedin.com/in/k-r-kaushik-kumar-967ba9215/" target="_blank" className="hover:text-black transition-colors">
             <FaLinkedin size={20} />
           </Link>
           <a href="mailto:krkaushikkumar@gmail.com" className="hover:text-black transition-colors">

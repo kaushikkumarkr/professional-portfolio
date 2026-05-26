@@ -5,6 +5,8 @@ import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 
+import Education from "@/components/Education";
+
 export default function Home() {
   return (
     <>
@@ -14,6 +16,7 @@ export default function Home() {
         <SkillsMatrix />
         <Projects />
         <Experience />
+        <Education />
       </main>
       <Footer />
     </>

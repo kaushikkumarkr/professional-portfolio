@@ -23,10 +23,13 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-4 text-gray-500">
+          <a href="/KaushikKumar_KR_Resume.pdf" download className="text-xs font-bold uppercase tracking-wider px-3 py-1.5 border border-gray-300 rounded hover:bg-gray-50 hover:text-black transition-colors text-gray-600 hidden sm:block">
+            Resume
+          </a>
           <Link href="https://github.com/kaushikkumarkr" target="_blank" className="hover:text-black transition-colors">
             <FaGithub size={18} />
           </Link>
-          <Link href="https://linkedin.com/in/kaushikkumarkr" target="_blank" className="hover:text-black transition-colors">
+          <Link href="https://www.linkedin.com/in/k-r-kaushik-kumar-967ba9215/" target="_blank" className="hover:text-black transition-colors">
             <FaLinkedin size={18} />
           </Link>
         </div>
