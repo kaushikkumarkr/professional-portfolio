@@ -13,17 +13,25 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 text-foreground"
+            className="text-5xl md:text-7xl font-extrabold tracking-tight mb-4 text-black"
           >
-            Kaushik Kumar. <br />
-            <span className="text-muted">Building Production Compound AI Systems.</span>
+            Kaushik Kumar.
           </motion.h1>
+
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="text-2xl md:text-3xl font-semibold tracking-tight text-gray-500 mb-8"
+          >
+            Building Production Compound AI Systems.
+          </motion.h2>
 
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-lg md:text-xl text-muted max-w-2xl mb-10 leading-relaxed font-medium"
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-lg md:text-xl text-gray-600 max-w-2xl mb-10 leading-relaxed font-medium"
           >
             I am an MS in Computer Science student at NJIT and an AI Engineer. 
             I specialize in Agentic AI, scalable MLOps, and deterministic multi-agent workflows that bridge the gap between advanced research and business outcomes.
