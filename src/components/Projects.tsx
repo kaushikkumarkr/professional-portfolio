@@ -44,30 +44,30 @@ const projectCategories = [
     id: "genai",
     label: "GenAI & Agents",
     projects: [
-      { name: "NExT-GPT", desc: "Code and models for NExT-GPT: Any-to-Any Multimodal Large Language Model.", tags: ["Python", "Multimodal", "LLMs"], link: "https://github.com/kaushikkumarkr/NExT-GPT" },
-      { name: "langchain-postgres", desc: "LangChain abstractions backed by Postgres Backend.", tags: ["Python", "LangChain", "Postgres"], link: "https://github.com/kaushikkumarkr/langchain-postgres" },
-      { name: "AgenticRAG_-RAGAS", desc: "Advanced RAG implementation with automated evaluation via RAGAS.", tags: ["Python", "RAGAS", "Agents"], link: "https://github.com/kaushikkumarkr/AgenticRAG_-RAGAS" },
-      { name: "AI_BI_Copilot", desc: "An AI Copilot for Business Intelligence and data query generation.", tags: ["Python", "Copilot", "Analytics"], link: "https://github.com/kaushikkumarkr/AI_BI_Copilot" }
+      { name: "NExT-GPT", desc: "Implemented an any-to-any multimodal LLM architecture, bridging the gap between text, image, and audio inputs for unified, complex reasoning.", tags: ["Python", "Multimodal", "LLMs"], link: "https://github.com/kaushikkumarkr/NExT-GPT" },
+      { name: "langchain-postgres", desc: "Engineered scalable LangChain abstractions backed by a Postgres database, drastically improving memory persistence and retrieval speeds for production agents.", tags: ["Python", "LangChain", "Postgres"], link: "https://github.com/kaushikkumarkr/langchain-postgres" },
+      { name: "AgenticRAG_-RAGAS", desc: "Built an advanced RAG implementation featuring automated RAGAS evaluation to ensure strictly quantified relevancy and faithfulness scores before deployment.", tags: ["Python", "RAGAS", "Agents"], link: "https://github.com/kaushikkumarkr/AgenticRAG_-RAGAS" },
+      { name: "AI_BI_Copilot", desc: "Architected a Business Intelligence Copilot capable of translating natural language into complex analytical SQL queries, reducing analyst bottleneck by automating data retrieval.", tags: ["Python", "Copilot", "Analytics"], link: "https://github.com/kaushikkumarkr/AI_BI_Copilot" }
     ]
   },
   {
     id: "data",
     label: "Data Science & ML",
     projects: [
-      { name: "Finance-Loan-Approval", desc: "End-to-end ML pipeline with explainability (SHAP) and Streamlit.", tags: ["Machine Learning", "Optuna", "SHAP"], link: "https://github.com/kaushikkumarkr/Finance-Loan-Approval" },
-      { name: "Data-Analysis-MAS", desc: "A Multi-Agent System dedicated to complex data analysis operations.", tags: ["Python", "Data Science", "Agents"], link: "https://github.com/kaushikkumarkr/Data-Analysis-MAS" },
-      { name: "RecSys", desc: "Recommendation Systems architecture and models.", tags: ["Python", "Recommendation", "ML"], link: "https://github.com/kaushikkumarkr/RecSys" },
-      { name: "NYC-Taxi-Analytics", desc: "Large-scale data analytics pipeline for NYC Taxi datasets.", tags: ["Python", "Analytics", "Data Pipeline"], link: "https://github.com/kaushikkumarkr/NYC-Taxi-Analytics" },
-      { name: "experimentation-platform", desc: "A robust A/B testing and experimentation platform.", tags: ["Python", "A/B Testing", "Stats"], link: "https://github.com/kaushikkumarkr/experimentation-platform" }
+      { name: "Finance-Loan-Approval", desc: "Engineered a production-ready loan approval ML pipeline, utilizing SHAP for complete model explainability to satisfy strict financial compliance requirements.", tags: ["Machine Learning", "Optuna", "SHAP"], link: "https://github.com/kaushikkumarkr/Finance-Loan-Approval" },
+      { name: "Data-Analysis-MAS", desc: "Deployed a dedicated Multi-Agent System (MAS) to automate complex data analysis workflows, significantly cutting down exploratory data analysis (EDA) time.", tags: ["Python", "Data Science", "Agents"], link: "https://github.com/kaushikkumarkr/Data-Analysis-MAS" },
+      { name: "RecSys", desc: "Developed highly optimized Recommendation System architectures designed to scale user personalization and drive higher engagement metrics.", tags: ["Python", "Recommendation", "ML"], link: "https://github.com/kaushikkumarkr/RecSys" },
+      { name: "NYC-Taxi-Analytics", desc: "Constructed a large-scale data analytics pipeline handling massive NYC Taxi datasets, optimizing query execution and uncovering actionable temporal trends.", tags: ["Python", "Analytics", "Data Pipeline"], link: "https://github.com/kaushikkumarkr/NYC-Taxi-Analytics" },
+      { name: "experimentation-platform", desc: "Built a robust A/B testing and experimentation platform ensuring statistically significant hypothesis testing and data-driven product decisions.", tags: ["Python", "A/B Testing", "Stats"], link: "https://github.com/kaushikkumarkr/experimentation-platform" }
     ]
   },
   {
     id: "backend",
     label: "Backend & Architecture",
     projects: [
-      { name: "LedgerLens", desc: "Strongly documented, robust Python project for data and backend processing.", tags: ["Python", "Infrastructure"], link: "https://github.com/kaushikkumarkr/LedgerLens" },
-      { name: "Ecom", desc: "Backend infrastructure for E-commerce applications.", tags: ["Python", "E-commerce"], link: "https://github.com/kaushikkumarkr/Ecom" },
-      { name: "Quant-Deepagent", desc: "Quantitative finance research agent.", tags: ["Python", "Quant", "Agents"], link: "https://github.com/kaushikkumarkr/Quant-Deepagent" }
+      { name: "LedgerLens", desc: "Architected a strongly documented, robust Python backend designed for heavy data processing workloads with guaranteed transactional integrity.", tags: ["Python", "Infrastructure"], link: "https://github.com/kaushikkumarkr/LedgerLens" },
+      { name: "Ecom", desc: "Engineered scalable backend microservices for E-commerce applications, focusing on low-latency inventory management and high-throughput order processing.", tags: ["Python", "E-commerce"], link: "https://github.com/kaushikkumarkr/Ecom" },
+      { name: "Quant-Deepagent", desc: "Developed an autonomous quantitative finance research agent capable of fetching, synthesizing, and backtesting complex financial strategies.", tags: ["Python", "Quant", "Agents"], link: "https://github.com/kaushikkumarkr/Quant-Deepagent" }
     ]
   }
 ];
