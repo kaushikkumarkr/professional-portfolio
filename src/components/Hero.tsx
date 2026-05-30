@@ -33,7 +33,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-gray-600 max-w-2xl mb-10 leading-relaxed font-medium"
           >
-            I am an MS in Computer Science student at NJIT and an AI Engineer. 
+            I hold an MS in Computer Science from NJIT and am an AI Engineer. 
             I specialize in Agentic AI, scalable MLOps, and deterministic multi-agent workflows that bridge the gap between advanced research and business outcomes.
           </motion.p>
 
